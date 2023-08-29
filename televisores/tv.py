@@ -48,10 +48,10 @@ class TV:
     def setNumTV(self, numTV):
         self._numTV = numTV
 
-    def turnOn(self, estado):
+    def turnOn(self):
         self._estado = True
 
-    def turnOff(self, estado):
+    def turnOff(self):
         self._estado = False
 
     def getEstado(self):
@@ -65,10 +65,10 @@ class TV:
         if self._canal > 1 and self._estado:
             self._canal -= 1
 
-    def volumeUp(self):
+    def volumenUp(self):
         if self._volumen < 7 and self._estado:
             self._volumen += 1
 
-    def volumeDown(self):
+    def volumenDown(self):
         if self._volumen > 0 and self._estado:
             self._volumen -= 1
